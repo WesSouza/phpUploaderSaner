@@ -59,8 +59,14 @@ pre{font-size:10px;}
 				</div>
 			</div>
 			<div class="row">
-				<div class="span6"><small><pre><?php print_r( $_FILES ); ?></pre></small></div>
-				<div class="span6"><pre><?php print_r( phpUploadSaner::parse( $_FILES ) ); ?></pre></div>
+				<div class="span6">
+					<h4>$_FILES</h4>
+					<pre><?php print_r( $_FILES ); ?></pre>
+				</div>
+				<div class="span6">
+					<h4>phpUploadSaner::parse</h4>
+					<pre><?php print_r( phpUploadSaner::parse( $_FILES ) ); ?></pre>
+				</div>
 			</div>
 		</div>
 		
